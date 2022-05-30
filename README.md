@@ -19,22 +19,23 @@
 ## > CRUD 구현 :pushpin:
 
 * 데이터 생성(Create)
+   
 ![image](https://user-images.githubusercontent.com/85923524/170958888-0d0234f0-5d84-40e2-8bb5-63f6297974bc.png)
 
-
-* 데이터 조회(Read) 
+* 데이터 조회(Read)
+   
 ![image](https://user-images.githubusercontent.com/85923524/170964409-cc8bfd5c-00cc-40e5-94b5-2c3536096b4e.png)
 
-
 * 데이터 정보 수정(Update)
+   
 ![image](https://user-images.githubusercontent.com/85923524/170972159-3554c70c-8739-4ebb-8960-271988ecd5d5.png)
-
-
+      
 * 데이터 추가(Insert)
+
 ![image](https://user-images.githubusercontent.com/85923524/170965454-e6d6e41b-588f-49a2-a902-f1dd2b129e80.png)
 
-
 * 데이터 삭제(Delete)
+
 ![image](https://user-images.githubusercontent.com/85923524/170965961-30a73b75-44f2-4859-9288-256ce461075c.png)
 
 
