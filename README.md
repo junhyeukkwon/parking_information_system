@@ -11,6 +11,16 @@
 #### 주차구역 update 나머지 null이 갱신 cars/{id}
 #### 출차 delete - id !!! cars/{id}
 
+### CRUD 구현
+
+* 데이터 생성(Create)
+
+![image](https://user-images.githubusercontent.com/85923524/170958888-0d0234f0-5d84-40e2-8bb5-63f6297974bc.png)
+
+
+* 데이터 조회 
+
+
 ### 역할 분담
 * 권준혁
   * 
