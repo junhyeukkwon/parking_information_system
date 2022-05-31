@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import dev.car.dto.CarResponseDTO;
 import dev.car.model.Car;
 import dev.car.service.CarService;
 
@@ -35,14 +37,26 @@ public class CarController {
 
 	// 차량 등록
 	@PostMapping("/regist")
-	public Car insertCar(@RequestBody Car car) {
-		return carService.insertCar(car);
+	@ResponseBody
+	public CarResponseDTO insertCar(@RequestBody Car car) {
+		Car insertedCarInfo = carService.insertCar(car);
+
+		CarResponseDTO responseDTO = new CarResponseDTO();
+		responseDTO.setMsg("car regist success!");
+		responseDTO.setCar(insertedCarInfo);
+		return responseDTO;
 	}
 
 	// 정보 수정
 	@PatchMapping("/{carId}")
-	public Car updateCar(@RequestBody Car car, @PathVariable("carId") int carId) {
-		return carService.updateCar(car, carId);
+	@ResponseBody
+	public CarResponseDTO updateCar(@RequestBody Car car, @PathVariable("carId") int carId) {
+		Car updatedCarInfo = carService.updateCar(car, carId);
+
+		CarResponseDTO responseDTO = new CarResponseDTO();
+		responseDTO.setMsg("parked location info update success!");
+		responseDTO.setCar(updatedCarInfo);
+		return responseDTO;
 	}
 
 	// 차량 삭제조회

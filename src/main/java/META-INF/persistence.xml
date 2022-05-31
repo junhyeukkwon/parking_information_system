@@ -6,7 +6,7 @@
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
 			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpatest?serverTimezone=UTC"/>
 			<property name="javax.persistence.jdbc.user" value="root"/>
-			<property name="javax.persistence.jdbc.password" value="1234"/>
+			<property name="javax.persistence.jdbc.password" value="jiwonsql98@"/>
 			
 			<!-- DB Dialect(방언) 설정(MySQL) -->
 			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
